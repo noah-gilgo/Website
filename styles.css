@@ -44,3 +44,15 @@ footer {
     text-align: center;
     padding-top: 30pt;
 }
+
+article {
+    border: aliceblue;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: azure;
+    padding: 10px;
+}
+
+section {
+    padding: 5px;
+}
