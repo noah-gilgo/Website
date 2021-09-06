@@ -16,13 +16,10 @@ h1 {
 }
 
 p.subheader {
+    font: 9pt Helvetica;
     font-weight: bold;
     color: #593d87;
-}
-
-img {
-    padding: 3pt;
-    float: right;
+    padding: 3px;
 }
 
 a {
