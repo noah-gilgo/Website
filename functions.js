@@ -14,3 +14,9 @@ function ternaryOperator(condition, op1, op2) {
         return op2;
     }
 }
+
+function howOldAmI() {
+    myBirthday = 905382600000 // My birthday measured in milliseconds elapsed since the start of January 1st, 1970.
+    howOldIAm = new Date(Date.now - myBirthday);
+    return (howOldIAm.getYear() - 1970);
+}
