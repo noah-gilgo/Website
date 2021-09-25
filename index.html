@@ -5,9 +5,15 @@
 		<title>noahgilgo.com</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="scrum.jpg">
-        <link rel="script" href="functions.js">
 	</head>
-	<body onload="howOldAmI()">
+	<body>
+        <script>
+            function howOldAmI() { // Returns how old I am.
+                var myBirthday = 905382600000; // My birthday measured in milliseconds elapsed since the start of January 1st, 1970.
+                var now = Date.now();
+                return Math.floor((now - myBirthday) / 31556952000);
+            }
+        </script>
 		<header>
 			<h1>Welcome to noahgilgo.com!</h1>
 		</header>
@@ -33,7 +39,7 @@
                 </header>
                 <hr>
                 <p>
-                    My name is Noah Gilgo, as you could likely guess from the domain name of this website. I am <script src="functions.js">document.write(howOldAmI());</script> years old and like to spend most of my time coding, with the rest
+                    My name is Noah Gilgo, as you could likely guess from the domain name of this website. I am <script>document.write(howOldAmI());</script> years old and like to spend most of my time coding, with the rest
                     of my spare time spent reading, jogging, gardening, and spending time with my family. I currently live in Hampstead, a town 20 miles northeast of Wilmington, 
                     North Carolina, where I attended college at the University of North Carolina at Wilmington. <!--TODO: Write JavaScript code to automatically update my age.-->
                 </p>
@@ -73,6 +79,9 @@
         <footer>
             <h3>Site last modified: <script>document.write(document.lastModified);</script></h3>
         </footer>
+        <script>
+            
+        </script>
 	</body>
     <script></script>
 </html>
